@@ -1,4 +1,4 @@
-def create_dictionary(key, value):
+def create_dictionary(k, v):
     """
     Convert two lists into a dictionary
     Args:
@@ -7,4 +7,10 @@ def create_dictionary(key, value):
     Returns:
         dict: dictionary with keys and values
     """
-    return
+    s={}
+    for i in range(len(k)):
+        s[k[i]]=v[i]
+
+
+    return s
+print(create_dictionary([1, 2, 3],["one", "two", "three"]))
