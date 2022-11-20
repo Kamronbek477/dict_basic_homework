@@ -8,7 +8,7 @@ def oldest(people:dict):
     """
     a,b=people.popitem()
     for k,v in people.items():
-        if b>v:
+        if b<v:
             b=v
             k=a
         
